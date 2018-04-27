@@ -162,13 +162,13 @@ void calculatePositions(float frameTime){
 				boid_list[i]->velocity.y = -MIN_VELOCITY; 
 		}
 		
-		if(boid_list[i]->velocity.x <MIN_VELOCITY||boid_list[i]->velocity.x >-MIN_VELOCITY ){
+		if(boid_list[i]->velocity.x <MIN_VELOCITY&&boid_list[i]->velocity.x >-MIN_VELOCITY ){
 		 	if(boid_list[i]->velocity.x>0)
 				boid_list[i]->velocity.x = MAX_VELOCITY/2;
 			else
 				boid_list[i]->velocity.x = -MAX_VELOCITY/2; 
 		}
-		if(boid_list[i]->velocity.y <MIN_VELOCITY||boid_list[i]->velocity.y >-MIN_VELOCITY){
+		if(boid_list[i]->velocity.y <MIN_VELOCITY&&boid_list[i]->velocity.y >-MIN_VELOCITY){
 		 	if(boid_list[i]->velocity.y>0)
 				boid_list[i]->velocity.y = MAX_VELOCITY/2;
 			else
